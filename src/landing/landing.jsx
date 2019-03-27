@@ -31,6 +31,8 @@ class Landing extends Component {
 
         <div class='landing-container'>
           <div id="picture"></div>
+          <div id="background"></div>
+
           <div id="layer1"></div>
           <div id="layer2"></div>
           <div id="layer3"></div>

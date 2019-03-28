@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import './landing.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitterSquare, faInstagram } from "@fortawesome/free-brands-svg-icons"
-
-const icon = <FontAwesomeIcon icon={faFacebook} />
 
 class Landing extends Component {
   render() {

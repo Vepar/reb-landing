@@ -3,11 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import Landing from './landing/landing';
 import * as serviceWorker from './serviceWorker';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faIgloo);
 ReactDOM.render(<Landing />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

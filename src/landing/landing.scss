@@ -14,9 +14,11 @@ body{
 //A lil layout  
 font-family: Montserrat !important;
 text-align:center;
+height:$height;
+width:$width;
 
   h1{
-    font-size:60px;
+    font-size:4rem;
     font-weight: bold;
   }
 
@@ -29,11 +31,24 @@ text-align:center;
     z-index: 5;
     height:$height;
     width:$width;
-    background-size:200%;
-    background-position:0 50%;
-    position:fixed;
-    top:0;
   }
+
+#picture{
+  background-size:100%;
+  background-position:0 50%;
+  position:fixed;
+  top:0;
+  background-image:url('../images/city-full.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  z-index:-1;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, .1);
+}
 
 .social-icons {
   display: inline-block;
@@ -44,10 +59,14 @@ text-align:center;
 }
 
 .subscribe-container {
-  margin-top: 80px;
+  padding-top: 80px;
   width: 400px;
+  height: 400px;
+  background: white;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  align-self: center;
 }
 
 .fa-icon {
@@ -76,27 +95,8 @@ text-align:center;
   margin-right: auto;
   color: white;
 }
-  
-#picture{
-  background-size:100%;
-  background-position:0 50%;
-  position:fixed;
-  top:0;
-  background-image:url('../images/city-full.jpg');
-  background-size:cover;
-  background-repeat:no-repeat;
-  z-index:-1;
-}
-
-#background {
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0, .1);
-}
 
 .btn-black {
-  // background: black;
-  // color: white;
   background: white;
   color: black;
   margin-left: 5px;

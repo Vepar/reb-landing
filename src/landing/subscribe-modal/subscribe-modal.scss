@@ -1,0 +1,27 @@
+.subscribe-modal {
+  width: 500px;
+  height: 200px;
+  background: white;
+  padding-top: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  border-radius: 25px;
+
+  .subscribe-modal div {
+    font-size: 2em;
+  }
+
+  .subscribe-email-input {
+    height: 30px !important;
+    display: inline-block;
+  }
+
+  // .subscribe-button {
+    // height: 40px;
+    // margin-left: 10px;
+  // }
+}

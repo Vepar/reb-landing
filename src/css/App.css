@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  background: rgb(27, 32, 34);
+}
+
+.container {
+  height: 100%;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+

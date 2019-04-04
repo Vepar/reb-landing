@@ -1,18 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
-import Landing from './landing/landing';
-import * as serviceWorker from './serviceWorker';
-import { Provider } from 'react-redux';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import createHistory from 'history/createBrowserHistory'
+import App from './components/App'
+import configureStore from './configureStore'
 
-ReactDOM.render(
-  <Provider store={store}>
-    <Landing />
-  </Provider>, 
-  document.getElementById('root')
-  );
+const history = createHistory()
+const store = configureStore(history)
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const render = App =>
+  ReactDOM.render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    document.getElementById('root')
+  )
+
+render(App)

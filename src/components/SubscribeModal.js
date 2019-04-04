@@ -1,8 +1,6 @@
-
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './subscribe-modal.scss';
+import '../css/SubscribeModal.scss';
 import Modal from '@material-ui/core/Modal'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
@@ -17,7 +15,6 @@ const styles = theme => ({
   },
   modalStyles: {
     display: 'flex',
-    height: '500px'
   }
 });
 
@@ -31,6 +28,7 @@ class SubscribeModal extends Component {
         open={this.props.open}
         onClose={this.props.handleClose}
         className={classes.modalStyles}
+        disableAutoFocus={true}
         >
         <div class='subscribe-modal'>
           <h2>

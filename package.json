@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "history": "^4.6.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
@@ -13,14 +14,21 @@
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-redux": "^6.0.1",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-universal-component": "^2.5.0",
+    "redux": "^3.7.1",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-first-router": "^1.8.8",
+    "redux-first-router-link": "^1.1.1",
+    "reselect": "^3.0.1",
+    "transition-group": "^0.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "aws s3 sync build/ s3://rebellion-landing"
+    "deploy": "aws s3 sync build/ s3://www.finethica.co"
   },
   "eslintConfig": {
     "extends": "react-app"
